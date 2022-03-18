@@ -30,6 +30,12 @@
 
   :global(:root) {
     --theme-color: purple;
+    --light-text-color: #bfc2c7;
+  }
+
+  :global(body.dark-mode) {
+    background-color: #1d3040;
+    color: var(--light-text-color);
   }
 
   main {
