@@ -1,4 +1,6 @@
 <script>
+  import About from './components/About.svelte';
+
   export let name;
   export let lastName;
   let svelteLogo = 'https://arepa.s3.amazonaws.com/svelte-logo.png';
@@ -6,8 +8,8 @@
 
 <main>
   <h1>Hello {name} {lastName}!</h1>
-  <p>Frontend Developer</p>
-  <img src={svelteLogo} alt="Svelte">
+  <About />
+  <img src={svelteLogo} alt="Svelte" />
 </main>
 
 <style lang="scss">
@@ -20,19 +22,14 @@
     --theme-color: purple;
   }
 
-  p {
-    color: var(--theme-color);
-    font-size: 22px;
-  }
-
   main {
     text-align: center;
     padding: 1em;
     max-width: 240px;
     margin: 0 auto;
-	img {
-		width: 30%;
-	}
+    img {
+      width: 30%;
+    }
   }
 
   h1 {
