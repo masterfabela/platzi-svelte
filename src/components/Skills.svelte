@@ -15,14 +15,16 @@
   ];
 </script>
 
-<div class="Skills">
-  <h3>Habilidades</h3>
-  <ul>
-    {#each skills as { name }}
-      <li>{name}</li>
-    {/each}
-  </ul>
-</div>
+<template>
+  <div class="Skills">
+    <h3>Habilidades</h3>
+    <ul>
+      {#each skills as { name }}
+        <li>{name}</li>
+      {/each}
+    </ul>
+  </div>
+</template>
 
 <style lang="scss">
   .Skills {
