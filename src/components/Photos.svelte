@@ -25,9 +25,12 @@
 
 <style lang="scss">
   .Photos {
+    margin-top: 2rem;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 8px;
+    img {
+      border-radius: 0.5rem;
+    }
   }
 </style>
